@@ -1,0 +1,63 @@
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.note-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: 5px solid black;
+    padding: 10px; /* Add padding if needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    overflow: scroll; /* Hide any overflowing content */
+    text-align: center; /* Center-align text */
+}
+
+.note-container h1 {
+    font-size: 1.2em; /* Adjust font size as needed */
+    margin: 0;
+}
+
+.note-container p {
+    font-size: 0.9em; /* Adjust font size as needed */
+    margin: 5px 0;
+}
+.navbar {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px; /* Space between navigation items */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Link color */
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color for contrast */
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid #fff; /* Add a top border to distinguish the footer */
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 10px 0; /* Add some margin to space out the paragraphs */
+}
+
+footer p:first-of-type {
+    font-weight: bold; /* Make the author's name bold */
+}

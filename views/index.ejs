@@ -1,0 +1,13 @@
+<%- include("partials/header.ejs")%>
+<div class="main-container">
+    <%if(locals.notes){%>
+        <%for(let i = 0; i < notes.length; i++){%>
+            <div class="note-container">
+                <h1><%= notes[i][0]%></h1>
+                <p><%= notes[i][1]%></p>
+                <p><%= notes[i][2]%></p>
+            </div>
+       <%}%>
+    <%}%>   
+</div>
+<%- include("partials/footer.ejs")%>
